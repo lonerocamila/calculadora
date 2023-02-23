@@ -20,8 +20,6 @@ body{
     grid-template-columns: repeat(4,1fr);
     width: 350px;
     max-width: 100%;
-    height: 300px;
-    margin: 20px;
     padding: 1.5rem;
     border-radius: 1rem;
     gap: .5rem;
@@ -31,8 +29,53 @@ body{
 .pantalla{
     background-color: rgb(36, 36, 103);
  display: grid;
- grid-column: 1 / 5;
+ grid-column: 1 / -1;
  padding: 1.5rem;
- font-size: 2.5rem;
+ font-size: 2rem;
  text-align: right;
+ border-radius: .5rem;
+ margin-bottom: 1rem;
+ font-family: monospace;
+ font-weight:600;
+}
+
+.btn{
+    background-color: rgb(244, 240, 235);
+    color: rgba(0, 0, 0, 0.72);
+    font-size: 1.5rem;
+    font-weight: 350;
+    border: 0;
+    padding: 1.5rem .5rem;
+    display: flex;
+    justify-content: center;
+    border-radius: .5rem;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+
+.btn:hover{
+    background-color: rgb(158, 214, 234);
+    cursor: pointer;
+}
+
+.btn:active{
+    background-color: rgb(79, 79, 160);
+    cursor: pointer;
+}
+
+
+#cero{
+    grid-column: span 2;
+    
+}
+
+#igual{
+    grid-row: span 2;
+    
+}
+
+#igual:hover{
+    background-color: rgb(247, 68, 68);
 }
